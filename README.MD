@@ -4,7 +4,7 @@
   </a>
 
   <p align="center">
-    Par Gaël FOINI
+    Par Gaël Foini
     <br>
     <a href="https://fgael.github.io/GaelFoini_2_08072021/">Accéder à la démo</a>
   </p>
@@ -12,7 +12,7 @@
 
 ## À propos
 
-Le site Reservia est un projet d'intégration de maquette produit par Gaël pour la formation de développeur web à OpenClassrooms.
+Le site Reservia est un projet d'intégration de maquette, produit par Gaël Foini pour la formation de développeur web chez OpenClassrooms.
 
 ### Développer avec
 
