@@ -1,0 +1,729 @@
+* {
+  font-family: "Raleway", sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  /* reset body margin and padding */
+  margin: 0;
+  padding: 0;
+}
+
+header,
+main {
+  /* container property alignement */
+  max-width: 90rem;
+  margin: auto;
+  padding: 0 2rem 0 2rem;
+}
+
+button:hover {
+  /* hover cursor pointer button */
+  cursor: pointer;
+}
+
+a {
+  /* no decoration on link + black color link */
+  text-decoration: none;
+  color: black;
+}
+
+/* --- start navigation --- */
+
+.navigation {
+  /* nav bloc and position */
+  display: grid;
+  grid-template-columns: 3fr repeat(3, auto);
+  column-gap: 1.5rem;
+  max-height: 7rem;
+}
+
+.navigation a {
+  /* nav link alignement and proprerty */
+  text-align: center;
+  padding: 3rem 1.25rem;
+  border-top: 3px solid transparent;
+}
+
+.navigation a:hover {
+  /* hover customization */
+  color: #0065fc;
+  border-top-color: #0065fc;
+}
+
+.imglogo {
+  /* logo position */
+  display: flex;
+  align-items: center;
+  margin-top: 1rem;
+}
+
+#register {
+  /* register property */
+  color: #0065fc;
+  font-weight: bold;
+}
+
+/* --- end navigation --- */
+
+/* --- start find section --- */
+
+.titlefind h1 {
+  /* h2 margin on title find + bold */
+  font-weight: 700;
+  margin-bottom: 0;
+}
+
+.titlefind p {
+  /* margin on title find */
+  margin-top: 0.5rem;
+  margin-bottom: 1.2rem;
+}
+
+::placeholder {
+  /* as named default, location search box */
+  font-weight: bold;
+  color: black;
+}
+
+.searchbar {
+  /* searchbox + icon + button container */
+  display: flex;
+  height: 3rem;
+  margin-bottom: 2.5rem;
+}
+
+.searchbar i {
+  /* location icon */
+  display: flex;
+  align-items: center;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  background-color: #f2f2f2;
+  border-radius: 1rem 0 0 1rem;
+}
+
+#search {
+  /* search box */
+  font-size: medium;
+  padding: 1rem;
+  border: 1px solid #f2f2f2;
+}
+
+.searchbar button {
+  /* blue search button */
+  color: white;
+  background-color: #0065fc;
+  border-radius: 0 1rem 1rem 0;
+  padding: 1rem;
+  font-weight: 700;
+  font-size: medium;
+  border-width: 0;
+}
+
+.searchbar button i {
+  /* responsive hide search icon */
+  display: none;
+}
+
+/* --- end find section --- */
+
+/* --- start filters section --- */
+
+.filters {
+  /* filter bar */
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  column-gap: 2.2rem;
+  font-weight: bold;
+  font-size: large;
+}
+
+.filters button {
+  /* filter denomination */
+  display: flex;
+  align-items: center;
+  font-weight: bold;
+  font-size: large;
+  border: 2px solid #d9d9d9;
+  border-left: 0;
+  border-radius: 2rem;
+  background: transparent;
+  padding-right: 1.1rem;
+  padding-left: 0;
+  height: 3rem;
+}
+
+.filters button:hover {
+  /* filter button hover background */
+  background-color: #deebff;
+  border: 2px solid transparent;
+  border-left: 0;
+}
+
+.filters i {
+  /* filter icon */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #0065fc;
+  margin-right: 1rem;
+  background-color: #deebff;
+  border-radius: 2rem;
+  height: 3rem;
+  width: 3rem;
+}
+
+.filters h3 {
+  font-size: 600;
+  margin-right: 0.5rem;
+}
+
+/* --- end filters section --- */
+
+/* --- start infos --- */
+
+.info {
+  /* info bar */
+  display: flex;
+  align-items: center;
+  margin: 1.8rem 0 1.8rem 0;
+}
+
+.info i {
+  /* info icon + border */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #0065fc;
+  margin-right: 0.5rem;
+  margin-bottom: 0.2rem;
+  border: 2px solid #f2f2f2;
+  border-radius: 2rem;
+  height: 1.6rem;
+  width: 1.6rem;
+  font-size: small;
+}
+
+/* end infos */
+
+/* start GRID accomodation */
+
+.gridcontainer {
+  /* container for accomodation + popular */
+  display: grid;
+  grid-template-columns: 65% auto;
+  max-width: 100%;
+  gap: 2.8rem;
+  margin-bottom: 4.2rem;
+}
+
+.gridcontainer h3 {
+  margin: 0.4rem;
+}
+
+.starrate {
+  /* star rate blue */
+  display: flex;
+  color: #0065fc;
+}
+
+.starrategrey {
+  /* star rate grey */
+  color: #d9d9d9;
+}
+
+.cardscontain {
+  /* accomodation container + background */
+  background-color: #f2f2f2;
+  border-radius: 2rem;
+}
+
+.cardscontain h2 {
+  /* accomodation h2 margin */
+  margin: 3rem 0 1.5rem 2.2rem;
+}
+
+.cardscontain p {
+  /* accomodation p margin */
+  margin: 0.5rem 0 0 0.5rem;
+}
+
+.cardscontain .starrate {
+  /* accomodation starrate margin */
+  margin: 0.5rem 0 0.5rem 0.5rem;
+}
+
+.gridacco {
+  /* accomodation container */
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+  grid-template-rows: repeat (2, 1fr);
+  padding: 0 2.2rem 0 2.2rem;
+  gap: 2.2rem;
+}
+
+.gridacco a {
+  /* background and border on accomodation */
+  border: 6px solid white;
+  border-radius: 1.5rem;
+  overflow: hidden;
+  background-color: white;
+}
+
+.popdescription h3 {
+  margin: 0.4rem 0;
+}
+
+.imgcontainer > img {
+  /* image container sizing */
+  object-fit: cover;
+  object-position: center;
+  height: 9.4rem;
+  width: 100%;
+}
+
+.aff {
+  /* afficher margin */
+  margin: 2.5rem 0 2.5rem 2.2rem;
+}
+
+.aff a {
+  /* afficher link setting */
+  font-size: large;
+  font-weight: bold;
+}
+
+.aff a:hover {
+  /* afficher hover */
+  color: #0065fc;
+}
+
+aside {
+  /* accomodation aside container */
+  background-color: #f2f2f2;
+  padding: 0 2rem 0 2rem;
+  border-radius: 2rem;
+}
+
+aside a {
+  /* popular border radius */
+  background-color: white;
+  border: 6px solid white;
+  border-radius: 1.5rem;
+  overflow: hidden;
+  min-width: 40%;
+}
+
+.popcontain {
+  /* popular container */
+  display: grid;
+  grid-template-rows: 5rem 2fr 2fr 2fr;
+  gap: 2.2rem;
+}
+
+.titlepop {
+  /* popular title + icon grid */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 2.9rem;
+}
+
+.titlepop i {
+  /* popular icon margin */
+  font-size: 2rem;
+}
+
+.imgcontaineraside {
+  /* popular image flex */
+  display: flex;
+  flex-direction: row;
+  background-color: white;
+  height: 10rem;
+  padding-right: 1.7rem;
+}
+
+.imgcontaineraside img {
+  /* image setting */
+  object-fit: cover;
+  object-position: center;
+  height: 100%;
+  width: 40%;
+  min-width: 40%;
+}
+
+.p-popcontain {
+  /* popular description */
+  display: flex;
+  flex-direction: column;
+  padding: 0 0.5rem 0.5rem 1.4rem;
+  justify-content: space-between;
+}
+
+p.popcontain p {
+  /* popular p margin */
+  margin-top: 0.2rem;
+}
+
+.gridacco > a:hover,
+.popcontain > a:hover {
+  /* accomodation hover zoom */
+  transform: scale(1.05);
+  transition-duration: 0.5s;
+}
+
+.gridacco > a,
+.popcontain > a {
+  /* accomodation shadow */
+  box-shadow: 0 3.3px 4.5px rgba(0, 0, 0, 0.028),
+    0 11.2px 15.2px rgba(0, 0, 0, 0.042), 0 50px 68px rgba(0, 0, 0, 0.07);
+}
+
+section span {
+  /* € bold */
+  font-weight: bold;
+}
+
+/* end GRID accomo */
+
+/* start GRID activities */
+
+#activityh2 {
+  margin-bottom: 2rem;
+}
+
+.activitiesgrid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2.5rem;
+}
+
+.activitybig {
+  display: flex;
+  flex-direction: column;
+}
+
+.activitycontaingrid {
+  display: grid;
+  grid-template-rows: auto auto;
+  gap: 2.5rem;
+}
+
+.activitycontain1 {
+  display: flex;
+  flex-direction: column;
+}
+
+.activitycontain2 {
+  display: flex;
+  flex-direction: column;
+}
+
+.activitiesgrid img {
+  object-fit: cover;
+  object-position: center;
+  width: 100%;
+  border-radius: 2rem 2rem 0 0;
+}
+
+.activitybig img {
+  height: 28rem;
+}
+
+.activitycontain1 img {
+  height: 13.1rem;
+}
+
+.activitycontain2 img {
+  height: 8.5rem;
+}
+
+.activitiesgrid h3 {
+  margin-left: 1.4rem;
+}
+
+.activitiesgrid a {
+  /* accomodation shadow */
+  box-shadow: 0 3.3px 4.5px rgba(0, 0, 0, 0.028),
+    0 11.2px 15.2px rgba(0, 0, 0, 0.042), 0 50px 68px rgba(0, 0, 0, 0.07);
+  border-radius: 2rem;
+}
+
+.activitiesgrid a:hover {
+  /* accomodation hover zoom */
+  transform: scale(1.05);
+  transition-duration: 0.5s;
+}
+
+/* end GRID activities */
+
+/* start footer menu */
+
+.footermenu {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  max-width: 90rem;
+  margin: auto;
+  margin-top: 5rem;
+  padding: 0 2rem 3rem 2rem;
+}
+
+.footermenu h3 {
+  padding-top: 2rem;
+}
+
+.footermenu a {
+  display: flex;
+  padding-top: 0.7rem;
+}
+
+footer {
+  background-color: #f2f2f2;
+}
+
+/* --- media queries responsive  --- */
+
+@media (max-width: 1365px) {
+  /* media queries responsive under 1365px */
+
+  header,
+  main {
+    /* container property alignement */
+    padding: 1.4rem 0 0 0;
+  }
+
+  /* start nav responsive */
+
+  .navigation {
+    /* responsive grid */
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto;
+    row-gap: 0.5rem;
+    column-gap: 0;
+  }
+
+  .navigation a {
+    /* reponsive hover border setting */
+    border-bottom: 3px solid #f2f2f2;
+    border-top: 0;
+    padding: 1rem;
+  }
+
+  .navigation a:hover {
+    /* reponsive hover border setting */
+    border-bottom-color: #0065fc;
+  }
+
+  .imglogo {
+    /* positionning imglogo */
+    margin-top: 0;
+    padding-left: 1.5rem;
+  }
+
+  #register {
+    /* positionning register padding and position */
+    grid-area: 1/2;
+    margin-left: 4rem;
+    border-bottom: 0;
+    border-top: 0;
+  }
+
+  #accomodation {
+    /* positionning accomodation */
+    padding-left: 2rem;
+  }
+
+  /* start nav responsive */
+
+  /* find title responsive */
+
+  #find,
+  #filtersinfo {
+    /* padding border on main */
+    padding: 0 1.2rem;
+  }
+
+  .titlefind p {
+    /* title find adjusting */
+    font-size: 1.1rem;
+    margin-top: 1rem;
+  }
+
+  /* end find title responsive */
+
+  /* start search responsive */
+
+  .searchbar {
+    /* searchbar adjusting */
+    margin-top: 2rem;
+  }
+
+  .searchbar button i {
+    /* button hide in mobile + new icon */
+    display: flex;
+    background: none;
+    justify-content: center;
+    padding: 0;
+  }
+
+  .searchbar button {
+    /* button search */
+    border-radius: 1rem;
+    margin-left: -1.5rem;
+  }
+
+  .searchbar span {
+    /*search bar mobile icon */
+    display: none;
+  }
+
+  #search {
+    /* search input larger */
+    width: 19rem;
+  }
+
+  /* end search responsive */
+
+  /* start filters responsive */
+
+  .filters h3 {
+    /* filter goes up in responsive */
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+    margin: 0;
+    margin-bottom: 0.5rem;
+    font-size: large;
+  }
+  .filters {
+    /* gap between filters */
+    gap: 0.7rem;
+  }
+
+  .filters button {
+    /* font size in filters button */
+    font-size: medium;
+  }
+
+  .info {
+    /* info margin */
+    margin-top: 0.5rem;
+  }
+
+  /* end filters responsive */
+
+  /* start accomodation responsive */
+
+  .gridcontainer {
+    /* nop gap and flex for reponsive accomodation */
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  .cardscontain {
+    /* reponsive change radius and background accomodation */
+    border-radius: 0;
+    background-color: white;
+  }
+
+  .cardscontain h2 {
+    /* h2 responsive margin */
+    margin: 0 0 2rem 1rem;
+  }
+
+  .titlepop {
+    /* popular title responsive grid */
+    grid-template-columns: 3fr 1fr;
+  }
+
+  .titlepop i {
+    /* titlepop icon end of grid in responsive */
+    align-items: flex-end;
+  }
+
+  aside {
+    /* popular border radius responsive */
+    padding: 0 1rem 0 1rem;
+    border-radius: 0;
+    padding-bottom: 2.5rem;
+  }
+
+  .imgcontaineraside {
+    /* no padding img container aside responsive */
+    padding: 0;
+  }
+
+  .imgcontaineraside img {
+    /* no padding img container aside responsive */
+    padding: 0;
+  }
+
+  .gridacco {
+    /* padding setting responsive */
+    padding: 0 1rem 0 1rem;
+    gap: 1.2rem;
+  }
+
+  .popcontain {
+    gap: 1.2rem;
+  }
+
+  .gridacco > a:hover,
+  .popcontain > a:hover {
+    /* accomodation hover zoom disable in responsive*/
+    transform: unset;
+  }
+
+  /* end accomodation responsive */
+
+  /* activity responsive */
+
+  .activitiesgrid {
+    /* nop gap and flex for reponsive accomodation */
+    display: flex;
+    flex-direction: column;
+    margin: 0 1rem 0 1rem;
+    gap: 1.5rem;
+  }
+
+  .activitiesgrid img {
+    height: 9.4rem;
+  }
+
+  .activitycontaingrid {
+    gap: 1.5rem;
+  }
+
+  .aff {
+    /* afficher margin in responsive */
+    margin: 2rem 0 0 1rem;
+  }
+
+  #activityh2 {
+    /* activity h2 responsive */
+    margin: 0 0 2.5rem 1rem;
+  }
+
+  .activitiesgrid a:hover {
+    /* accomodation hover zoom disable in responsive*/
+    transform: unset;
+  }
+
+  /* end activity responsive */
+
+  /* start footer responsive */
+
+  .footermenu {
+    display: flex;
+    flex-direction: column;
+    margin: 3.5rem 0 0 1rem;
+    padding: 0 0 1.4rem 0;
+  }
+
+  /* end footer responsive */
+}

@@ -7,8 +7,6 @@
     Par Gaël FOINI
     <br>
     <a href="https://fgael.github.io/GaelFoini_2_08072021/">Accéder à la démo</a>
-    ·
-    <a href="https://fgael.github.io/GaelFoini_2_08072021/issues">Une option à ajouter ?</a>
   </p>
 </p>
 
