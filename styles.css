@@ -179,7 +179,6 @@ a {
 }
 
 .filters h3 {
-  font-size: 600;
   margin-right: 0.5rem;
 }
 
@@ -262,7 +261,6 @@ a {
   /* accomodation container */
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
-  grid-template-rows: repeat (2, 1fr);
   padding: 0 2.2rem 0 2.2rem;
   gap: 2.2rem;
 }
@@ -312,7 +310,6 @@ aside {
 
 aside a {
   /* popular border radius */
-  background-color: white;
   border: 6px solid white;
   border-radius: 1.5rem;
   overflow: hidden;
@@ -399,7 +396,7 @@ section span {
 
 .activitiesgrid {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
   gap: 2.5rem;
 }
 
@@ -488,7 +485,46 @@ footer {
 
 /* --- media queries responsive  --- */
 
-@media (max-width: 1365px) {
+@media (max-width: 1400px) {
+  .gridcontainer {
+    /* nop gap and flex for reponsive accomodation */
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  .titlepop i {
+    /* titlepop icon end of grid in responsive */
+    align-items: flex-end;
+  }
+
+  .gridacco {
+    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+  }
+
+  aside {
+    padding-bottom: 2rem;
+  }
+
+  .activitiesgrid {
+    grid-template-columns: repeat(auto-fit, minmax(27rem, 1fr));
+  }
+}
+
+@media (max-width: 950px) {
+  .activitiesgrid {
+    /* nop gap and flex for reponsive accomodation */
+    display: flex;
+    flex-direction: column;
+    margin: 0 1rem 0 1rem;
+    gap: 1.5rem;
+  }
+
+  .activitiesgrid img {
+    height: 9.4rem;
+  }
+}
+
+@media (max-width: 768px) {
   /* media queries responsive under 1365px */
 
   header,
@@ -664,12 +700,13 @@ footer {
   }
 
   .gridacco {
-    /* padding setting responsive */
+    /* padding setting responsive accomodation */
     padding: 0 1rem 0 1rem;
     gap: 1.2rem;
   }
 
   .popcontain {
+    /* gap popularity adjustement responsive */
     gap: 1.2rem;
   }
 
@@ -692,10 +729,12 @@ footer {
   }
 
   .activitiesgrid img {
+    /* fixed height in img responsive */
     height: 9.4rem;
   }
 
   .activitycontaingrid {
+    /* gap adjustement responsive */
     gap: 1.5rem;
   }
 
