@@ -483,6 +483,8 @@ footer {
   background-color: #f2f2f2;
 }
 
+/* end footer menu */
+
 /* --- media queries responsive  --- */
 
 @media (max-width: 1400px) {
@@ -547,7 +549,7 @@ footer {
     /* reponsive hover border setting */
     border-bottom: 3px solid #f2f2f2;
     border-top: 0;
-    padding: 1rem;
+    padding: 0.9rem;
   }
 
   .navigation a:hover {
@@ -574,7 +576,7 @@ footer {
     padding-left: 2rem;
   }
 
-  /* start nav responsive */
+  /* end nav responsive */
 
   /* find title responsive */
 
@@ -669,7 +671,7 @@ footer {
 
   .cardscontain h2 {
     /* h2 responsive margin */
-    margin: 0 0 2rem 1rem;
+    margin: 0 0 2rem 1.2rem;
   }
 
   .titlepop {
@@ -701,6 +703,7 @@ footer {
 
   .gridacco {
     /* padding setting responsive accomodation */
+    grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr));
     padding: 0 1rem 0 1rem;
     gap: 1.2rem;
   }
@@ -761,7 +764,7 @@ footer {
     display: flex;
     flex-direction: column;
     margin: 3.5rem 0 0 1rem;
-    padding: 0 0 1.4rem 0;
+    padding: 0 0 2rem 0;
   }
 
   /* end footer responsive */
