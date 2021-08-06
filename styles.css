@@ -566,7 +566,7 @@ footer {
   #register {
     /* positionning register padding and position */
     grid-area: 1/2;
-    margin-left: 4rem;
+    padding-left: 4rem;
     border-bottom: 0;
     border-top: 0;
   }
